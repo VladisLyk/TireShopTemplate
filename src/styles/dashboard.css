@@ -1,0 +1,252 @@
+:root {
+    --background : #1D1D1D;
+    --color: #2B71AF;
+}
+
+body {
+    background-color: var(--background);
+}
+
+.page {
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.sidepanel {
+    width: 20%;
+    padding: 2em 0.5em;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.sidepanel .sidepanel-section .sidepanel-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidepanel .sidepanel-section .sidepanel-head .menu-btn {
+    display: none;
+    background: none;
+    border: 1px solid white;
+    color: white;
+    padding: 0.4em 1.2em;
+    font-size: 1.2em;
+}
+
+.sidepanel .sidepanel-section .sidepanel-head .menu-btn.active {
+    background-color: rgba(255, 255, 255, 0.353);
+}
+
+.sidepanel .sidepanel-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidepanel .logo {
+    width: 90%;
+}
+
+.content {
+    width: 80%;
+    height: auto;
+    background-color: white;
+    margin: 1em;
+    margin-left: 0;
+    margin-bottom: 0;
+    border-radius: 2em;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 2em;
+}
+
+.side-link .bx {
+    font-size: 2em;
+}
+
+
+.side-link {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.sidepanel-section {
+    display: flex;
+    gap: 3em;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 767px){
+
+    .page {
+        display: block;
+    }
+
+    .content {
+        width: 100%;
+        border-radius: 0;
+        margin: 0em;
+        height: auto;
+    }
+
+    .sidepanel {
+        width: 100%;
+        height: auto;
+        padding: 1em 0.5em;
+    }
+
+    .sidepanel.active {
+        height: 100%;
+    }
+
+    .sidepanel .sidepanel-wrapper .sidepanel-section {
+        gap: 0em;
+    }
+
+    .sidepanel.active .sidepanel-wrapper .sidepanel-section {
+        gap: 2em;
+    }
+
+    .sidepanel .sidepanel-section .links, .sidepanel.active .sidepanel-wrapper .dropdown {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .sidepanel.active .sidepanel-section .links, .sidepanel.active .sidepanel-wrapper .dropdown {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .sidepanel-wrapper {
+        width: 90%;
+    }
+
+    .sidepanel .logo {
+        width: 10em !important;
+    }
+
+    .sidepanel .sidepanel-section .sidepanel-head .menu-btn {
+        display: inherit;
+    }
+
+    .sidepanel .sidepanel-wrapper div:nth-child(2) {
+        margin-top: 10px;
+    }
+}
+
+.content .head .breadcrumbs {
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+}
+.content .head {
+    display: flex;
+    justify-content: space-between;
+}
+.content .profile .information {
+    text-align: end;
+}
+.content .profile, .content .profile .information {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.content .profile .bx {
+    font-size: 2.3em;
+}
+
+.content .head .breadcrumbs i {
+    font-size: 1.4em;
+    opacity: 0.6;
+}
+
+.content .categories {
+    display: flex;
+    gap: 2em;
+}
+
+.content .categories a {
+    color: gray;
+    padding: 1em 0;
+}
+
+.content .categories a.active {
+    font-weight: bold;
+    color: var(--color);
+    border-bottom: 2px solid var(--color);
+}
+
+.content .content-page select {
+    background: none;
+    background-color: var(--color);
+    color: white;
+}
+.content .content-page {
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content .content-page .page-info {
+    width: 65%;
+}
+
+.content .content-page .manager-info {
+    width: 35%;
+    height: auto;
+    margin-left: 20px;
+    background-color: var(--background);
+    border-radius: 25px;
+    color: white;
+    padding: 3em 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.content .content-page .manager-info .column i {
+    background-color: var(--color);
+    padding: 0.5em;
+    border-radius: 1em;
+}
+
+.content .content-page .manager-info p {
+    color: rgb(196, 196, 196);
+}
+
+.content .content-page .manager-info .column {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    margin: 2em 0em;
+}
+
+.content .content-page .manager-info .column .column-value {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em
+}
+
+@media screen and (min-width: 0px) and (max-width: 991px){
+    .content .content-page {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+    
+    .content .content-page .page-info {
+        width: 100%;
+    }
+    
+    .content .content-page .manager-info {
+        width: 100%;
+        margin: 0;
+    }
+}

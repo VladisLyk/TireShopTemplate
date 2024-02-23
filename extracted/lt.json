@@ -1,0 +1,14 @@
+{
+  "navbar.api": {
+    "defaultMessage": "API"
+  },
+  "navbar.contacts": {
+    "defaultMessage": "Kontakti"
+  },
+  "navbar.discounts": {
+    "defaultMessage": "Pamatatladies"
+  },
+  "navbar.shipping": {
+    "defaultMessage": "Piegedes cena"
+  }
+}

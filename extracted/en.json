@@ -1,0 +1,62 @@
+{
+  "content.accountingContacts": {
+    "defaultMessage": "Accounting Contacts"
+  },
+  "content.accountingEmail": {
+    "defaultMessage": "Email"
+  },
+  "content.accountingPhoneNumber": {
+    "defaultMessage": "Phone Number"
+  },
+  "content.email": {
+    "defaultMessage": "Email"
+  },
+  "content.officePhoneNumber": {
+    "defaultMessage": "Office Phone Number"
+  },
+  "content.storeAddress": {
+    "defaultMessage": "Store / Warehouse Address"
+  },
+  "content.workingHours": {
+    "defaultMessage": "Working Hours"
+  },
+  "managers.email": {
+    "defaultMessage": "Email"
+  },
+  "managers.name": {
+    "defaultMessage": "Verds"
+  },
+  "managers.phoneNumber": {
+    "defaultMessage": "Phone Number"
+  },
+  "managers.wholesalePrices": {
+    "defaultMessage": "(Wholesale prices and discounts)"
+  },
+  "managers.yourManager": {
+    "defaultMessage": "Your manager:"
+  },
+  "navbar.api": {
+    "defaultMessage": "API"
+  },
+  "navbar.contacts": {
+    "defaultMessage": "Contacts"
+  },
+  "navbar.discounts": {
+    "defaultMessage": "Discounts"
+  },
+  "navbar.shipping": {
+    "defaultMessage": "Shipping cost"
+  },
+  "orderInfo.additionalInfo": {
+    "defaultMessage": "For clarification of cooperation conditions or in case of specific questions, please contact your assigned manager."
+  },
+  "orderInfo.emailTitle": {
+    "defaultMessage": "Email for inquiries"
+  },
+  "orderInfo.phoneTitle": {
+    "defaultMessage": "Phone Number"
+  },
+  "orderInfo.title": {
+    "defaultMessage": "Learn information about orders:"
+  }
+}

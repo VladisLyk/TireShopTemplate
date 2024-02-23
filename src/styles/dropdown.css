@@ -1,0 +1,43 @@
+.dropdown .bx {
+    transition: 0.1s ease all;
+}
+
+.dropdown {
+    cursor: pointer;
+}
+
+.dropdown .dropdown-wrapper .dropdown-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.dropdown .dropdown-wrapper .dropdown-head .dropdown-title .bx {
+    font-size: 2em;
+}
+
+
+.dropdown .dropdown-wrapper .dropdown-head .dropdown-title,
+.dropdown-link {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+.dropdown .dropdown-wrapper .dropdown-content {
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    visibility: hidden;
+}
+
+.dropdown.active .dropdown-wrapper .dropdown-content {
+    padding: 1em;
+    visibility: visible;
+}
+
+.dropdown.active .bxs-up-arrow {
+    transform: rotate(180deg);
+}
