@@ -1,7 +1,30 @@
 ## Getting Started
 
-First, run the server:
+First, install dependencies:
 
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+# or
+bun install
+```
+
+Second, compile the project:
+
+```bash
+npm run build
+# or
+yarn run build
+# or
+pnpm run build
+# or
+bun run build
+```
+
+Third, start the project
 ```bash
 npm start
 # or
